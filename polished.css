@@ -1,0 +1,84 @@
+/* CSS for Styling Digital CV */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #dddddd;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+h2 {
+  color: #4CAF50;
+}
+
+article {
+  margin-bottom: 15px;
+}
+
+article h3 {
+  margin-top: 0;
+  color: #333333;
+}
+
+#work-experience article, #education article, #projects article {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: '• ';
+  color: #4CAF50;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2em;
+  }
+}
